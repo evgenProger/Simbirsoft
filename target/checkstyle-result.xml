@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="/home/evgeny/task_test/src/main/java/Main.java">
+</file>
+<file name="/home/evgeny/task_test/src/main/java/Database.java">
+</file>
+<file name="/home/evgeny/task_test/src/main/java/Splitting.java">
+</file>
+<file name="/home/evgeny/task_test/src/main/java/ParseURL.java">
+</file>
+<file name="/home/evgeny/task_test/src/test/java/ParseURLTest.java">
+</file>
+<file name="/home/evgeny/task_test/src/main/resources/log4j.properties">
+</file>
+<file name="/home/evgeny/task_test/src/main/resources/app.properties">
+</file>
+</checkstyle>
