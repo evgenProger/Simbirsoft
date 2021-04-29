@@ -2,6 +2,7 @@ import org.apache.log4j.Logger;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -29,10 +30,11 @@ public class Main {
             System.out.println(stringIntegerEntry.getKey() + " " + stringIntegerEntry.getValue());
         }
 
-        FileReader reader = new FileReader("src/main/resources/app.properties");
-        Properties properties = new Properties();
-        properties.load(reader);
-        Database database = new Database(parseURL, properties);
-        database.load(parseURL);
+        try (InputStream reader = Main.class.getResourceAsStream("app.properties")) {
+            Properties properties = new Properties();
+            properties.load(reader);
+            Database database = new Database(parseURL, properties);
+            database.load(parseURL);
+        }
     }
 }
