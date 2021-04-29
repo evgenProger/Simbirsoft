@@ -75,7 +75,6 @@
             </executions>
         </plugin>
     </plugins>
-
     </build>
 
     <properties>
